@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
+  <title>Mazi PortFolio</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -23,7 +25,7 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" type="text/css" href="assets/css/detailpage.css">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -46,15 +48,15 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Alex Smith</a></h1>
-        <div class="social-links mt-3 text-center">
+        <img src="assets/img/mazii-image.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Moaz Ali</a></h1>
+        <!-- <div class="social-links mt-3 text-center">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
           <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
+        </div> -->
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
@@ -62,7 +64,8 @@
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+              <span>Portfolio</span></a></li>
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
@@ -95,20 +98,8 @@
 
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
-                </div>
-
+              <div class="swiper-wrapper align-items-center" id="loopit">
+                <!-- below script is running to render images heres -->
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -117,18 +108,22 @@
           <div class="col-lg-4">
             <div class="portfolio-info">
               <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+              <ul id="project-info">
+                <li id="p-name"> </li>
+                <li id="p-category"> </li>
+                <li id="p-client"> </li>
+                <li id="p-date"> </li>
+                <li id="p-url"> </li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
+              <!-- <p>
+                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
+                Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia
+                accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt
+                eius.
+              </p> -->
             </div>
           </div>
 
@@ -140,8 +135,8 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
+  <!-- <footer id="footer"> -->
+    <!-- <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>iPortfolio</span></strong>
       </div>
@@ -151,11 +146,12 @@
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
+      <!-- </div>
+    </div> --> -->
+  <!-- </footer>End  Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -170,7 +166,138 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    const Projects =
+    {
+      "freeDelivery": {
+        "name": "Free Delivery",
+        "category": 'E-commerce',
+        "client": 'ASU Company',
+        "date": "01 March, 2021",
+        "url": 'https://play.google.com/store/apps/details?id=com.gapdynamics.freedelivery&hl=en_US',
+        "images": [
+          "assets/img/portfolio/1.webp",
+          "assets/img/portfolio/2.webp",
+          "assets/img/portfolio/3.webp",
+          "assets/img/portfolio/4.webp",
+          "assets/img/portfolio/5.webp",
+          "assets/img/portfolio/6.webp",
+          // Add more image URLs here as needed
+        ]
+      },
+      "izmirBeauty": {
+        "name": "Izmir Beauty",
+        "category": 'E-commerce',
+        "client": 'ASU Company',
+        "date": "05 Auguest, 2021",
+        "url": 'https://play.google.com/store/apps/details?id=com.gapdynamics.izmirbeauty&hl=en_US',
+        "images": [
+          "assets/img/portfolio/i1.webp",
+          "assets/img/portfolio/i2.webp",
+          "assets/img/portfolio/i3.webp",
+          "assets/img/portfolio/i4.webp",
+          "assets/img/portfolio/i5.webp",
+          "assets/img/portfolio/i6.webp",
+          // Add more image URLs here as needed
+        ]
+      },
+      "taskManagement": {
+        "name": "Task Management Assistant",
+        "category": 'Productivity',
+        "client": 'ASU Company',
+        "date": "02 Jan, 2022",
+        "url": 'https://play.google.com/store/apps/details?id=com.taskmanagementapp&hl=en_US',
+        "images": [
+          "assets/img/portfolio/t1.webp",
+          "assets/img/portfolio/t2.webp",
+          "assets/img/portfolio/t3.webp",
+          "assets/img/portfolio/t4.webp",
+          "assets/img/portfolio/t5.webp",
+          "assets/img/portfolio/t6.webp",
+          // Add more image URLs here as needed
+        ]
+      },
+      "screenFlash": {
+        "name": "Screen Flash",
+        "category": 'Entertainment',
+        "client": 'ASU Company',
+        "date": "12 May, 2022",
+        "url": 'https://play.google.com/store/apps/details?id=com.taskmanagementapp&hl=en_US',
+        "images": [
+          "assets/img/portfolio/t1.webp",
+          "assets/img/portfolio/t2.webp",
+          "assets/img/portfolio/t3.webp",
+          "assets/img/portfolio/t4.webp",
+          "assets/img/portfolio/t5.webp",
+          "assets/img/portfolio/t6.webp",
+          // Add more image URLs here as needed
+        ]
+      },
 
+    };
+    function getQueryParam(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+    const project = getQueryParam('project');
+    const projectObj = Projects[project]
+    const data = Projects[project]["images"]
+
+    const projectName = document.getElementById("p-name");
+    const strong=document.createElement("strong")
+    strong.textContent=`Name: ${projectObj.name}`
+    projectName.appendChild(strong)
+
+
+    const category = document.getElementById("p-category");
+    const strong1=document.createElement("strong")
+    strong1.textContent=`Category: ${projectObj.category}`
+    category.appendChild(strong1)
+
+
+    const client = document.getElementById("p-client");
+    const strongC=document.createElement("strong")
+    strongC.textContent=`Client: ${projectObj.client}`
+    client.appendChild(strongC)
+
+    const date = document.getElementById("p-date");
+    const strongD=document.createElement("strong")
+    strongD.textContent=`Date: ${projectObj.date}`
+    date.appendChild(strongD)
+
+    const url = document.getElementById("p-url");
+    const anchor=document.createElement("a")
+    anchor.href=`${projectObj.url}`
+    anchor.textContent=`${projectObj.url}`
+    url.appendChild(anchor)
+
+    const sliderWrapper = document.getElementById("loopit");
+    data.forEach((imageUrl) => {
+      // Create a new swiper-slide
+      const swiperSlide = document.createElement("div");
+      swiperSlide.classList.add("swiper-slide");
+      swiperSlide.style.display = "flex";
+      swiperSlide.style.justifyContent = "center";
+      swiperSlide.style.alignItems = "center";
+      // Create an image box and set the image source
+      const imageBox = document.createElement("div");
+      imageBox.classList.add("imageBox");
+
+
+      const img = document.createElement("img");
+      img.src = imageUrl;
+      img.alt = "Portfolio Image";
+      img.style.borderRadius = "8px";
+      // Append the image to the image box
+      imageBox.appendChild(img);
+
+      // Append the image box to the swiper slide
+      swiperSlide.appendChild(imageBox);
+
+      // Append the swiper slide to the slider wrapper
+      sliderWrapper.appendChild(swiperSlide);
+    });
+  </script>
 </body>
 
 </html>
